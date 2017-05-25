@@ -6,14 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 #
-# Teacher.create([
-# {name: "Sheila Yuan", email: "shyyuan@yahoo.com"},
-# {name: "Li Wang", email: "liwang168@gmail.com"},
-# {name: "J.J. Chou", email: "jj.chow.lm@gmail.com"},
-# {name: "Stephanie Liu (Kuan)", email: "liukuan612@yahoo.com"},
-# {name: "Shufen Lin (Wu)", email: "chienmowu@hotmail.com"},
-# {name: "Nancy Loh", email: "nancyloh@yahoo.com"}
-# ])
+Teacher.create([
+{name: "Sheila Yuan", email: "shyyuan@yahoo.com"},
+{name: "Li Wang", email: "liwang168@gmail.com"},
+{name: "J.J. Chou", email: "jj.chow.lm@gmail.com"},
+{name: "Stephanie Liu (Kuan)", email: "liukuan612@yahoo.com"},
+{name: "Shufen Lin (Wu)", email: "chienmowu@hotmail.com"},
+{name: "Nancy Loh", email: "nancyloh@yahoo.com"}
+])
 
 
 Event.create([
@@ -46,3 +46,9 @@ Event.create([
     :end_datetime => DateTime.parse("11/06/2017 12:30")
   }
   ])
+
+
+Dialogue.create(teacher_id: 2, event_id: 1, content: "I will bring the hard boards for postser")
+Dialogue.create(teacher_id:2, event_id: 3, content: "I have 18 people registered for lunch")
+Dialogue.create(teacher_id:2, event_id:4, content: "I need to leave at 11 that day. Can someone come and help out?")
+Dialogue.create(teacher_id:5, event_id:4, content: "I can help that day.")
