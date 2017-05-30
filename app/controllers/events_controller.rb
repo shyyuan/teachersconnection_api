@@ -8,9 +8,10 @@ class EventsController < ApplicationController
     render json: @events
   end
 
-  # GET /events/1
+  # GET /events/1, and its dialogues
   def show
-    render json: @event
+    dialogues = @event.dialogues
+    render json: {event: @event, dialogues: dialogues}
   end
 
   # POST /events

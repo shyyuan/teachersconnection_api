@@ -1,6 +1,6 @@
 class Event < ApplicationRecord
-  has_many :dialogues
-  has_many :teachers, through: :dialogues
+  has_many :dialogues, :dependent => :destroy
+  # has_many :teachers, through: :dialogues
   validates :title, :presence => true
   validates :description, :presence => true
   validates :convener, :presence => true
