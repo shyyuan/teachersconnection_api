@@ -1,5 +1,5 @@
-# README
-WDIR Final Project Rails API Server
+# WDIR Final Project Rails API Server
+# Teachers Connection
 
 Teachers Connection is a private community application for the Li-Ming Chinese Academy.
 
