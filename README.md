@@ -1,25 +1,10 @@
 # README
 WDIR Final Project Rails API Server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Teachers Connection is a private community application for the Li-Ming Chinese Academy.
 
-Things you may want to cover:
+* The Ruby serves a JSON API with all CRUD operations available across the models.
 
-* Ruby version
+* Three database models in Postresql that have many-to-many relationship with seeds data.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Deployed to Heroku: 
